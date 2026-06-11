@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8" />
@@ -392,6 +392,29 @@ section{position:relative;padding:clamp(70px,9vw,120px) 0;z-index:1}
 .prog-card ul li{display:flex;align-items:flex-start;gap:11px;padding:7px 0;color:var(--white-warm);font-size:1rem;border-top:1px solid rgba(22,62,102,.35)}
 .prog-card ul li:first-child{border-top:0}
 .prog-card ul li .bullet{flex-shrink:0;margin-top:6px;width:9px;height:9px;border-radius:50%;background:var(--blue);box-shadow:0 0 8px rgba(0,113,207,.7);border:2px solid rgba(21,155,255,.5)}
+
+/* ---------- Aulas Online ---------- */
+.online{background:linear-gradient(180deg,#020406,#051E39 50%,#020406)}
+.online-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,64px);align-items:center}
+.online-features{display:grid;gap:16px;margin-top:28px}
+.online-feat{display:flex;align-items:flex-start;gap:14px;padding:18px 20px;border-radius:14px;background:rgba(0,108,198,.07);border:1px solid rgba(0,108,198,.28);transition:border-color .3s,box-shadow .3s}
+.online-feat:hover{border-color:var(--blue-light);box-shadow:0 0 24px rgba(0,108,198,.22)}
+.online-feat .ic{flex-shrink:0;width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:rgba(0,108,198,.14);border:1px solid rgba(0,108,198,.4)}
+.online-feat .ic svg{width:22px;height:22px;color:var(--blue-light)}
+.online-feat b{display:block;font-family:var(--font-head);text-transform:uppercase;letter-spacing:.5px;color:var(--white);font-size:.98rem;margin-bottom:4px}
+.online-feat p{font-size:.93rem;color:var(--gray-light);margin:0}
+.online-badge{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(90deg,rgba(0,108,198,.18),rgba(0,62,117,.14));border:1px solid rgba(21,155,255,.4);border-radius:999px;padding:10px 20px;font-family:var(--font-head);text-transform:uppercase;letter-spacing:1px;font-size:.8rem;color:var(--blue-light);margin-bottom:22px}
+.online-badge svg{width:16px;height:16px}
+.online-visual{position:relative}
+.online-screen{border-radius:18px;overflow:hidden;background:linear-gradient(160deg,rgba(5,30,57,.95),rgba(3,10,18,.97));border:1px solid rgba(0,108,198,.4);box-shadow:0 30px 70px rgba(0,0,0,.55),0 0 50px rgba(0,90,163,.2);padding:20px}
+.online-screen-top{display:flex;align-items:center;gap:10px;margin-bottom:16px;padding-bottom:14px;border-bottom:1px solid rgba(22,62,102,.5)}
+.online-screen-top .dot-live{flex-shrink:0}
+.online-screen-top span{font-family:var(--font-head);letter-spacing:2px;font-size:.7rem;color:var(--gray-light);text-transform:uppercase}
+.online-lesson-list{display:grid;gap:10px}
+.online-lesson{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:10px;background:rgba(0,108,198,.07);border:1px solid rgba(0,108,198,.2)}
+.online-lesson svg{flex-shrink:0;width:18px;height:18px;color:var(--blue-light)}
+.online-lesson span{font-size:.9rem;color:var(--white-warm)}
+.online-lesson .dur{margin-left:auto;font-size:.78rem;color:var(--gray-mid);font-family:var(--font-head);letter-spacing:1px}
 
 /* ---------- Como será o dia (timeline) ---------- */
 .day{background:linear-gradient(180deg,#0a0a0b,#020406)}
@@ -899,6 +922,51 @@ section{position:relative;padding:clamp(70px,9vw,120px) 0;z-index:1}
       <a href="#inscricao" class="btn btn-primary btn-lg">Quero garantir minha vaga
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
       </a>
+    </div>
+  </div>
+</section>
+<hr class="divider"/>
+
+<!-- ===== AULAS ONLINE ===== -->
+<section class="online">
+  <div class="container">
+    <div class="online-grid">
+      <div class="reveal">
+        <span class="online-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>Incluso na inscricao</span>
+        <span class="eyebrow reveal" style="--d:40ms">AULAS ONLINE</span>
+        <h2 class="reveal" style="--d:80ms">ALÉM DA IMERSÃO PRESENCIAL, VOCÊ TAMBÉM RECEBE <span class="accent">AULAS ONLINE</span></h2>
+        <p class="lead reveal" style="--d:140ms;margin-top:16px">Os alunos têm acesso a aulas online complementares para reforçar os conteúdos que serão abordados na imersão presencial.</p>
+        <div class="online-features">
+          <div class="online-feat reveal" style="--d:180ms">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+            <div><b>Acesso imediato</b><p>Disponível assim que sua inscrição for confirmada, para você já ir se preparando.</p></div>
+          </div>
+          <div class="online-feat reveal" style="--d:220ms">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+            <div><b>Conteúdo complementar</b><p>Fundamentos e conceitos que vão turbinar seu aproveitamento no dia presencial.</p></div>
+          </div>
+          <div class="online-feat reveal" style="--d:260ms">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a7 7 0 00-7 7c0 2 1 3 1 5a3 3 0 003 3h6a3 3 0 003-3c0-2 1-3 1-5a7 7 0 00-7-7z"/><path d="M9 22h6"/></svg></div>
+            <div><b>Estude no seu ritmo</b><p>Assista quando e quantas vezes quiser, no celular ou computador.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="online-visual reveal-right" style="--d:160ms">
+        <div class="online-screen">
+          <div class="online-screen-top">
+            <span class="dot-live"></span>
+            <span>Plataforma de aulas &middot; POCUS Cardíaco</span>
+          </div>
+          <div class="online-lesson-list">
+            <div class="online-lesson"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg><span>Física do ultrassom e janelas cardíacas</span><span class="dur">18 min</span></div>
+            <div class="online-lesson"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg><span>Avaliação da função ventricular</span><span class="dur">22 min</span></div>
+            <div class="online-lesson"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg><span>Derrame pericárdico e tamponamento</span><span class="dur">15 min</span></div>
+            <div class="online-lesson"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg><span>Avaliação da volemia e resposta a fluidos</span><span class="dur">20 min</span></div>
+            <div class="online-lesson"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg><span>Integração POCUS à decisão clínica</span><span class="dur">25 min</span></div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
