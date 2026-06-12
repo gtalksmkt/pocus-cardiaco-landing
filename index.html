@@ -395,8 +395,9 @@ section{position:relative;padding:clamp(70px,9vw,120px) 0;z-index:1}
 
 /* ---------- Aulas Online ---------- */
 .online{background:linear-gradient(180deg,#020406,#051E39 50%,#020406)}
-.online-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,64px);align-items:center}
-.online-features{display:grid;gap:16px;margin-top:28px}
+.online-grid{display:block;max-width:1000px;margin:0 auto;text-align:center}
+.online .lead{max-width:680px;margin-left:auto;margin-right:auto}
+.online-features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:32px;text-align:left}
 .online-feat{display:flex;align-items:flex-start;gap:14px;padding:18px 20px;border-radius:14px;background:rgba(0,108,198,.07);border:1px solid rgba(0,108,198,.28);transition:border-color .3s,box-shadow .3s}
 .online-feat:hover{border-color:var(--blue-light);box-shadow:0 0 24px rgba(0,108,198,.22)}
 .online-feat .ic{flex-shrink:0;width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:rgba(0,108,198,.14);border:1px solid rgba(0,108,198,.4)}
@@ -641,6 +642,7 @@ section{position:relative;padding:clamp(70px,9vw,120px) 0;z-index:1}
   .about-cards{grid-template-columns:1fr}
   .info-list{grid-template-columns:1fr}
   .benefits-grid{grid-template-columns:1fr}
+  .online-features{grid-template-columns:1fr}
   .aud-grid{grid-template-columns:repeat(2,1fr);gap:12px}
   .aud-card{padding:18px 14px}
   .tl-grid{grid-template-columns:1fr;gap:8px}
@@ -948,22 +950,6 @@ section{position:relative;padding:clamp(70px,9vw,120px) 0;z-index:1}
           <div class="online-feat reveal" style="--d:260ms">
             <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a7 7 0 00-7 7c0 2 1 3 1 5a3 3 0 003 3h6a3 3 0 003-3c0-2 1-3 1-5a7 7 0 00-7-7z"/><path d="M9 22h6"/></svg></div>
             <div><b>Estude no seu ritmo</b><p>Assista quando e quantas vezes quiser, no celular ou computador.</p></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="online-visual reveal-right" style="--d:160ms">
-        <div class="online-screen">
-          <div class="online-screen-top">
-            <span class="dot-live"></span>
-            <span>Plataforma de aulas &middot; POCUS Cardíaco</span>
-          </div>
-          <div class="online-lesson-list">
-            <div class="online-lesson"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg><span>Física do ultrassom e janelas cardíacas</span><span class="dur">18 min</span></div>
-            <div class="online-lesson"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg><span>Avaliação da função ventricular</span><span class="dur">22 min</span></div>
-            <div class="online-lesson"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg><span>Derrame pericárdico e tamponamento</span><span class="dur">15 min</span></div>
-            <div class="online-lesson"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg><span>Avaliação da volemia e resposta a fluidos</span><span class="dur">20 min</span></div>
-            <div class="online-lesson"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg><span>Integração POCUS à decisão clínica</span><span class="dur">25 min</span></div>
           </div>
         </div>
       </div>
